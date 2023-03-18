@@ -27,7 +27,6 @@ def read_mitbih(filename, max_time=100, classes= ['F', 'N', 'S', 'V', 'Q'], max_
     samples = spio.loadmat(filename + ".mat")
     if trainset == 1:  # DS1
         samples = samples['s2s_mitbih_DS1']
-
     else:  # DS2
         samples = samples['s2s_mitbih_DS2']
 
